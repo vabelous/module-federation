@@ -32,10 +32,10 @@ module.exports = {
         // },        
         
         // For hosts (please adjust)
-        // remotes: {
-        //     "reporting": "reporting@http://localhost:4200/remoteEntry.js",
+        remotes: {
+            "reporting": "showCase@http://localhost:4300/showCaseEntry.js",
 
-        // },
+        },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 

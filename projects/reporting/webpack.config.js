@@ -25,11 +25,11 @@ module.exports = {
     new ModuleFederationPlugin({
       
         // For remotes (please adjust)
-        // name: "reporting",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './projects/reporting/src/app/app.component.ts',
-        // },        
+        name: "showCase",
+        filename: "showCaseEntry.js",
+        exposes: {
+            './ShowCaseModule': './projects/reporting/src/app/show-case/show-case.module.ts',
+        },        
         
         // For hosts (please adjust)
         // remotes: {
