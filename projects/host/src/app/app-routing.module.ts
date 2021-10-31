@@ -11,19 +11,11 @@ const routes: Routes = [
       exposedModule: './ShowCaseModule'
     }).then(mod => mod.ShowCaseModule)
   },
-  // {
-  //   path: 'pages',
-  //   loadChildren: () => import('./simple-pages/simple-pages.module').then(mod => mod.SimplePagesModule)
-  // },
   {
     path: '',
     redirectTo: 'show-case',
     pathMatch: 'full'
   },
-  // {
-  //   path: '**',
-  //   redirectTo: 'pages/error-404'
-  // }
 ];
 
 @NgModule({

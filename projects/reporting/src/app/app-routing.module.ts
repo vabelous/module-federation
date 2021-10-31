@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () => 
       import("./show-case/show-case.module").then((m) => m.ShowCaseModule),
   },
+  {
+    path: '',
+    redirectTo: 'show-case',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({
