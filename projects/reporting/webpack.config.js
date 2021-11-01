@@ -42,7 +42,7 @@ module.exports = {
           "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
           "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
           "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-
+          "@core-pub-sub": { singleton: true, strictVersion: true, requiredVersion: 'auto', import: 'projects/host/src/app/core/pub-sub/index' },
           ...sharedMappings.getDescriptors()
         })
         

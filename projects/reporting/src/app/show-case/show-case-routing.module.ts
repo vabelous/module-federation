@@ -11,6 +11,11 @@ const routes: Routes = [{
       loadChildren: () => import('./show-case-sub-module1/show-case-sub-module1.module')
         .then(mod => mod.ShowCaseSubModule1Module)
     },
+    {
+      path: 'report-x',
+      loadChildren: () => import('../report-x/report-x-routing.module')
+        .then(mod => mod.ReportXRoutingModule)
+    },
   ],
 }];
 
